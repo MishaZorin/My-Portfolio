@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    overflow-x: hidden;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contact {
+    padding: 7px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+a {
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: gray;
+    transition: .6s;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+.container {
+    display: flex;
+
+
+}
+
+.left {
+    background-color: rgb(190, 187, 187);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.descriptions {
+    margin-top: 300px;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    width: 100%;
+}
+
+.readmore {
+    background-color: #1D1D1D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    display: flex;
+
+}
+
+.lorem {
+    margin-left: 70px;
+}
+
+.skills {
+    background-color: rgb(190, 187, 187);
+}
+
+.display span {
+    font-size: 40px;
+    margin-top: 20px;
+    border: 5px solid #000000;
+    padding: 20px 30px;
+    display: inline-block;
+
+
+}
+
+a {
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.display h5 {
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-align: center;
+    color: #000;
+}
+
+.mobileModal {
+    display: none;
+}
+
+.mobileModal p {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.y {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.topnav {
+    /* overflow: hidden; */
+    background-color: #333;
+    position: relative;
+    display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: block;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #000000;
+    color: white;
+}
+
+@media (max-width:600px) {
+    
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+
+    .project-links {
+
+        flex-direction: column;
+    }
+
+    .blay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-card {
+        margin-top: 20px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .mobileModal {
+        display: block;
+        background-image: url("imgs/Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .container {
+        display: none;
+    }
+
+    .mobileModal {
+        padding-top: 400px;
+        
+    }
+
+    .topnav {
+        display: block;
+    }
+}
+
+
+
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.project-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.demo-link,
+.code-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    flex: 1;
+}
+
+.demo-link {
+    background: #4A90E2;
+    color: white;
+}
+
+.demo-link:hover {
+    background: #357abd;
+}
+
+.code-link {
+    background: #f0f0f0;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+.code-link:hover {
+    background: #e0e0e0;
+    border-color: #ccc;
+}
