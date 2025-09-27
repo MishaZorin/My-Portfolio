@@ -167,12 +167,12 @@ a {
     display: none;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+
 .topnav #myLinks {
     display: none;
 }
 
-/* Style navigation menu links */
+
 .topnav a {
     color: white;
     padding: 14px 16px;
@@ -181,7 +181,7 @@ a {
     display: block;
 }
 
-/* Style the hamburger menu */
+
 .topnav a.icon {
     background: black;
     display: block;
@@ -190,13 +190,13 @@ a {
     top: 0;
 }
 
-/* Add a grey background color on mouse-over */
+
 /* .topnav a:hover {
   background-color: #ddd;
   color: black;
 } */
 
-/* Style the active link (or home/logo) */
+
 .active {
     background-color: #000000;
     color: white;
@@ -217,7 +217,13 @@ a {
         margin: auto;
         
     }
-    
+    .lorem p{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card img{
+        width: 80%;
+    }
 
 
 
@@ -281,7 +287,9 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 20 20px;
 }
-
+.blay{
+    gap: 20px;
+}
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -350,6 +358,9 @@ a {
 }
 
 footer {
-    background-color: #000000;
-    margin-bottom: -100px;
+    background-color: #1A1A1A;
+    
+}
+footer a{
+    margin: 100px 0;
 }
